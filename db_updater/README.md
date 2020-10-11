@@ -5,10 +5,11 @@ The three LEDs on the keyboard are used as lines of synchronous serial communica
 **update.c** is the utility used for the actual update
 
 *Example*
-    [edit makedb.c and put your password data. Remeber data is meant to be usb keyboard scancodes. Refer to usb_hid_keys.h]
-    gcc -o makedb makedb.c
-    ./makedb >data
-    gcc -o updater updater.c
-    ./updater data
-
+```
+[edit makedb.c and put your password data. Remeber data is meant to be usb keyboard scancodes. Refer to usb_hid_keys.h]
+gcc -o makedb makedb.c
+./makedb >data
+gcc -o updater updater.c
+./updater data
+```
 
